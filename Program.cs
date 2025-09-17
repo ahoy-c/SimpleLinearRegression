@@ -10,10 +10,10 @@ namespace SimpleLinearRegression
 
             string text = "Калькулятор Простой линейной регрессии";
             Console.SetCursorPosition(((Console.WindowWidth - text.Length) / 2), Console.CursorTop);
-            Console.WriteLine(text + "\n");
+            Console.WriteLine(text );
 
 
-            Console.Write($"Введите все переменные по X через пробел или запятую: ");
+            Console.Write($"\nВведите все переменные по X через пробел или запятую: ");
 
             string[] strX = Console.ReadLine().Split(new[] { ' ', ',' }, StringSplitOptions.RemoveEmptyEntries);
             double[] x = new double[strX.Length];
