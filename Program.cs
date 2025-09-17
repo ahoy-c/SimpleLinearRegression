@@ -10,8 +10,8 @@ namespace SimpleLinearRegression
 
             string text = "Калькулятор Простой линейной регрессии";
             Console.SetCursorPosition(((Console.WindowWidth - text.Length) / 2), Console.CursorTop);
-            Console.WriteLine(text);
-            Console.WriteLine();
+            Console.WriteLine(text + "\n");
+
 
             Console.Write($"Введите все переменные по X через пробел или запятую: ");
 
@@ -22,9 +22,7 @@ namespace SimpleLinearRegression
                 x[i] = double.Parse(strX[i]);
             }
 
-            Console.WriteLine();
-            Console.WriteLine($"Вы ввели {x.Length} значений по X");
-            Console.WriteLine();
+            Console.WriteLine($"\nВы ввели {x.Length} значений по X\n");
 
             Console.Write($"Введите все переменные по Y через пробел или запятую: ");
             string[] strY = Console.ReadLine().Split(new[] { ' ', ',' }, StringSplitOptions.RemoveEmptyEntries);
@@ -34,9 +32,7 @@ namespace SimpleLinearRegression
                 y[i] = double.Parse(strY[i]);
             }
 
-            Console.WriteLine();
-            Console.WriteLine($"Вы ввели {y.Length} значений по Y");
-            Console.WriteLine();
+            Console.WriteLine($"\nВы ввели {y.Length} значений по Y\n");
 
             double sumXY_diff = 0;
             double sumX_diff2 = 0;
@@ -69,15 +65,13 @@ namespace SimpleLinearRegression
             Console.WriteLine("beta: " + beta);
             Console.WriteLine("alfa: " + alpha);
 
-            Console.WriteLine();
 
-            Console.Write("Введите итоговый X, чтобы узнать Y: ");
+            Console.Write("\nВведите итоговый X, чтобы узнать Y: ");
 
             double xItog = double.Parse(Console.ReadLine());
             double yItog = beta * xItog + alpha;
 
-            Console.WriteLine();
-            Console.WriteLine($"Y = {yItog}");
+            Console.WriteLine($"\nY = {yItog}");
         }
     }
 }
