@@ -1,10 +1,10 @@
 ## Формулы линейной регрессии
 
 Коэффициент наклона (β):  
-![Beta](images/beta.svg)
+![Beta](images/BETA.svg)
 
 Свободный член (α):  
-![Alpha](images/alpha.svg)
+![Alpha](images/ALPHA.svg)
 
 Предсказанное значение Y:  
-![Y](images/y.svg)
+![Y](images/Y.svg)
